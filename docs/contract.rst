@@ -25,7 +25,7 @@ Take TRC20 as an example, the `balance query` is a very common task:
 
   client = Tron(network='nile')
 
-  cntr = client.get_contract("THi2qJf6XmvTJSpZHc17HgQsmJop6kb3ia")
+  cntr = client.get_contract("TTiwmTcCH91ZfetXcEdtmkEtsJVJ5YxbPn")
 
   print(dir(cntr.functions))  # prints list of contract functions
 
@@ -47,7 +47,7 @@ Take TRC20 as an example, the `balance query` is a very common task:
   # Symbol: RMB
 
   precision = cntr.functions.decimals()
-  print('Balance:', cntr.functions.balanceOf('TJRabPrwbZy45sbavfcjinPJC18kjpRTv8') / 10 ** precision)
+  print('Balance:', cntr.functions.balanceOf('TTiwmTcCH91ZfetXcEdtmkEtsJVJ5YxbPn') / 10 ** precision)
   # Balance: 100000.0
 
 Trigger call
